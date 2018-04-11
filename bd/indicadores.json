@@ -1,0 +1,22 @@
+[
+  {
+    "nombreIndicador": "ROE",
+    "calculoIndicador": "({NetIncome}/{CapitalTotal})",
+    "usuario": "juan"
+  },
+  {
+    "nombreIndicador": "DebtEqRatio",
+    "calculoIndicador": "({PasivoTotal}/{PatrimonioNeto})",
+    "usuario": "juan"
+  },
+  {
+    "nombreIndicador": "ProfitMargin",
+    "calculoIndicador": "({NetIncome}/{VentasNetas})",
+    "usuario": "juan"
+  },
+  {
+    "nombreIndicador": "NetIncome",
+    "calculoIndicador": "({IngresoNetoOD}+{IngresoNetoCC})",
+    "usuario": "pedro"
+  }
+]

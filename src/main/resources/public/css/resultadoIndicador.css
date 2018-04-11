@@ -1,0 +1,71 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+#jumbotron{
+	text-align: center;
+	background-image: url("http://static.wixstatic.com/media/ed7054_1ead7b6813744f1b846cbfc7dcc5ccfe.jpg_srz_480_360_85_22_0.50_1.20_0.00_jpg_srz");
+	
+}
+
+
+
+.container button{
+	
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	border: solid 1px green;
+	font-weight: bolder;
+	padding: 12px 35px;
+	background: green;
+	
+}
+
+.container button:hover{
+	border: 2px solid black;
+	background-color: white;
+	color: green;
+}
+
+#atras{
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	border: solid 1px red;
+	font-weight: bolder;
+	padding: 12px 35px;
+	background: red;
+	margin-top: 30px;
+	
+}
+
+#atras:hover{
+	border: 2px solid black;
+	background-color: white;
+	color: red;
+}
+.card {
+  height: 100%;
+}
+
+
+select{
+	margin-bottom: 40px;
+}
+
+body{
+	background-color: lightgray;
+}

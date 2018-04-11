@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Crear Metodologia</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="/css/crearMetodologia.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <form role="form" action="/inicio/{{usuario}}" method="POST">
+              <button class="navbar-brand" style="border-color: transparent; background-color: transparent;">Donde Invierto?</button>
+          </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            	 <form role="form" action="/inicio/{{usuario}}/cuenta" method="POST">
+              <button class="nav-link" style="border-color: transparent;background-color: transparent;">Cuentas</button>
+          </form>
+            </li>
+            <li class="nav-item">
+            	 <form role="form" action="/inicio/{{usuario}}/indicador" method="POST">
+              <button class="nav-link" style="border-color: transparent; background-color: transparent;">Indicadores</button>
+          </form>
+            </li>
+            <li class="nav-item">
+               <form role="form" action="/inicio/{{usuario}}/metodologia" method="POST">
+              <button class="nav-link" style="border-color: transparent; background-color: transparent;margin-right: 15px;">Metodologias</button>
+            </li>
+        </form>
+          <li class="nav-item">
+               <form role="form" action="/" method="GET">
+              <button class="nav-link" style="border-color: transparent; background-color: transparent;">Cerrar Sesion</button>
+            </li>
+        </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+        <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4" id="jumbotron">
+        <h1 class="display-3"  style="font-weight: bolder;">Crear Nueva Metodologia</h1>
+        <p class="lead"  style="font-weight: bolder;" >A continuacion debera ingresar el nombre de la misma, los indicadores asociados y sus condiciones</p>
+      </header>
+
+<div class="form-group">
+	<div>
+	<form role="form" action="/inicio/{{usuario}}/metodologia/metodologiaCreada" method="POST">
+		 <input name="nombreMetodologia" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Nombre de la Metodologia">
+		
+		</div>
+
+		<center>
+		<div>
+		
+			
+		
+		<input name="indicador1" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Cuenta o Indicador">
+		 
+		<select name="condicion1" class="form-control">
+		
+			<option value="-1">Seleccionar Condicion</option>
+			<option value="higherThan">mayor que</option>
+			<option value="lowerThan">menor que</option>
+		</select>
+		
+		
+			<input name="valor1" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Valor">
+	
+		</div>
+		
+		<div>
+		<input name="indicador2" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Cuenta o Indicador">
+		<select name="condicion2" class="form-control">
+			<option value="-1">Seleccionar Condicion</option>
+			<option value="higherThan">Mayor Que</option>
+			<option value="lowerThan">Menor Que</option>
+		</select>
+								
+		
+			 <input name="valor2" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Valor">
+		
+		</div>
+		<div>
+		
+		<input name="indicador3" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Cuenta o Indicador">
+		<select name="condicion3" class="form-control">
+			<option value="-1">Seleccionar Condicion</option>
+			<option value="higherThan">Mayor que</option>
+			<option value="lowerThan">Menor que</option>
+		</select>
+								
+		
+			<input name="valor1" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Ingrese Valor">
+		
+		
+		</div>
+		<div>
+		<input name="indicador4" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Cuenta o Indicador">
+		<select name="condicion4" class="form-control" id="condicion">
+			<option value="-1">Seleccionar Condicion</option>
+			<option value="highest">Mas alto posible</option>
+			<option value="lowest">Mas bajo posible</option>
+		</select>
+		</div>
+		<div>
+		<input name="indicador5" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Cuenta o Indicador">
+		<select name="condicion5" class="form-control" id="condicion">
+			<option value="-1">Seleccionar Condicion</option>
+			<option value="highest">Mas alto posible</option>
+			<option value="lowest">Mas bajo posible</option>
+		</select>
+		</div>
+		<div>
+		<input name="indicador6" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Cuenta o Indicador">
+		<select name="condicion6" class="form-control" id="condicion">
+			<option value="-1">Seleccionar Condicion</option>
+			<option value="highest">Mas alto posible</option>
+			<option value="lowest">Mas bajo posible</option>
+		</select>
+		</div>
+
+		<button  type="submit" class="btn btn-primary" style="margin-top: 30px;">Crear Metodologia</button>
+	</form>
+</center>
+</div>
+</div>
+</div>
+<br>
+<center>
+	<form role="form" action="/inicio/{{usuario}}/metodologia" method="POST">
+	<button type="submit" id="atras" class="btn btn-danger"> << Atras </button>
+	</form>
+</center>
+</body> 
+</html>

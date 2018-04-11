@@ -1,0 +1,40 @@
+.nuestroBoton {
+	border: 1px solid white;
+	border-radius: 10px;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.nuestroBoton:hover {
+	background-color: rgba(255, 255, 255, .5);
+	border: 1px solid white;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.seccion{
+	padding: 70px 0px;
+}
+
+.texto h2{
+	margin: 40px 0px;
+	font-size: 2.7em;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+.texto p{
+	margin: 40px 0px;
+	font-size: 1.2em;
+	font-family: 'News Cycle', sans-serif;
+}
+
+.texto a{
+	margin: 10px 0px;
+}
+
+
+
+#jumbotron{
+  text-align: center;
+  background-image:url("https://www.crecenegocios.com/wp-content/uploads/2016/02/donde-invertir-mi-dinero.jpg");
+}

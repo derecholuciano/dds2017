@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Crear Indicador</title>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="/css/crearIndicador.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <form role="form" action="/inicio/{{usuario}}" method="POST">
+              <button class="navbar-brand" style="border-color: transparent; background-color: transparent;">¿Dónde Invierto?</button>
+          </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+            	 <form role="form" action="/inicio/{{usuario}}/cuenta" method="POST">
+              <button class="nav-link" style="border-color: transparent;background-color: transparent;">Cuentas</button>
+          </form>
+            </li>
+            <li class="nav-item">
+            	 <form role="form" action="/inicio/{{usuario}}/indicador" method="POST">
+              <button class="nav-link" style="border-color: transparent; background-color: transparent;">Indicadores</button>
+          </form>
+            </li>
+            <li class="nav-item">
+               <form role="form" action="/inicio/{{usuario}}/metodologia" method="POST">
+              <button class="nav-link" style="border-color: transparent; background-color: transparent;margin-right: 15px;">Metodologías</button>
+            </li>
+        </form>
+          <li class="nav-item">
+               <form role="form" action="/" method="GET">
+              <button class="nav-link" style="border-color: transparent; background-color: transparent;">Cerrar Sesión</button>
+            </li>
+        </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+        <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4" id="jumbotron">
+        <h1 class="display-3"  style="font-weight: bolder;">Crear Nuevo Indicador</h1>
+        <p class="lead"  style="font-weight: bolder;" >A continuación deberá ingresar el nombre del mismo y su fórmula asociada</p>
+      </header>
+
+ <div class="form-group">
+	<form role="form" action="/inicio/{{usuario}}/indicador/indicadorCreado" method="POST">
+		
+			 <input name="nombreI" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Nombre del Indicador">
+		
+			 <input name="valorI" type="FormulaI" class="form-control" id="exampleInputPassword1" placeholder="Fórmula asociada">
+		<center>
+		<button  type="submit" class="btn btn-primary" >Crear Indicador</button>
+	</form>
+ 
+<br>
+<br>
+
+	<form role="form" action="/inicio/{{usuario}}/indicador" method="POST">
+	<button id ="atras" type="submit" class="btn btn-danger"> << Atrás </button>
+	</form>
+</center>
+</div>
+</div>
+</body>
+</html>
